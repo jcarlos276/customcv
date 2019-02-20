@@ -20,6 +20,29 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DINPro-Black.otf</string>
+		<string>DINPro-BlackItalic.otf</string>
+		<string>DINPro-Bold.otf</string>
+		<string>DINPro-BoldItalic.otf</string>
+		<string>DINPro-Cond.otf</string>
+		<string>DINPro-CondBlack.otf</string>
+		<string>DINPro-CondBlackIta.otf</string>
+		<string>DINPro-CondBold.otf</string>
+		<string>DINPro-CondBoldIta.otf</string>
+		<string>DINPro-CondIta.otf</string>
+		<string>DINPro-CondLight.otf</string>
+		<string>DINPro-CondLightIta.otf</string>
+		<string>DINPro-CondMediIta.otf</string>
+		<string>DINPro-CondMedium.otf</string>
+		<string>DINPro-Italic.otf</string>
+		<string>DINPro-Light.otf</string>
+		<string>DINPro-LightItalic.otf</string>
+		<string>DINPro-Medium.otf</string>
+		<string>DINPro-MediumItalic.otf</string>
+		<string>DINPro.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

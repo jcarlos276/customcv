@@ -12,6 +12,11 @@
 		528983B321480DA000FBE691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528983B121480DA000FBE691 /* Main.storyboard */; };
 		528983B521480DA300FBE691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528983B421480DA300FBE691 /* Assets.xcassets */; };
 		528983B821480DA300FBE691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528983B621480DA300FBE691 /* LaunchScreen.storyboard */; };
+		528983C02148122700FBE691 /* utils in Resources */ = {isa = PBXBuildFile; fileRef = 528983BF2148122600FBE691 /* utils */; };
+		52D94C882149670300926B45 /* RoundBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D94C872149670300926B45 /* RoundBorderedView.swift */; };
+		52D94C8A2149673F00926B45 /* RoundShadowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D94C892149673F00926B45 /* RoundShadowedView.swift */; };
+		52D94C8C214967BC00926B45 /* DatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D94C8B214967BC00926B45 /* DatosViewController.swift */; };
+		52D94C8E2149727600926B45 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D94C8D2149727600926B45 /* PerfilViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		528983B421480DA300FBE691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		528983B721480DA300FBE691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		528983B921480DA300FBE691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		528983BF2148122600FBE691 /* utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = utils; sourceTree = "<group>"; };
+		52D94C872149670300926B45 /* RoundBorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBorderedView.swift; sourceTree = "<group>"; };
+		52D94C892149673F00926B45 /* RoundShadowedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowedView.swift; sourceTree = "<group>"; };
+		52D94C8B214967BC00926B45 /* DatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosViewController.swift; sourceTree = "<group>"; };
+		52D94C8D2149727600926B45 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		528983AC21480DA000FBE691 /* PersonalCV */ = {
 			isa = PBXGroup;
 			children = (
+				52D94C86214966DD00926B45 /* CustomClasses */,
 				528983AD21480DA000FBE691 /* AppDelegate.swift */,
-				528983AF21480DA000FBE691 /* ViewController.swift */,
 				528983B121480DA000FBE691 /* Main.storyboard */,
 				528983B421480DA300FBE691 /* Assets.xcassets */,
+				528983BF2148122600FBE691 /* utils */,
 				528983B621480DA300FBE691 /* LaunchScreen.storyboard */,
 				528983B921480DA300FBE691 /* Info.plist */,
+				528983AF21480DA000FBE691 /* ViewController.swift */,
+				52D94C8B214967BC00926B45 /* DatosViewController.swift */,
+				52D94C8D2149727600926B45 /* PerfilViewController.swift */,
 			);
 			path = PersonalCV;
+			sourceTree = "<group>";
+		};
+		52D94C86214966DD00926B45 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				52D94C872149670300926B45 /* RoundBorderedView.swift */,
+				52D94C892149673F00926B45 /* RoundShadowedView.swift */,
+			);
+			path = CustomClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528983C02148122700FBE691 /* utils in Resources */,
 				528983B821480DA300FBE691 /* LaunchScreen.storyboard in Resources */,
 				528983B521480DA300FBE691 /* Assets.xcassets in Resources */,
 				528983B321480DA000FBE691 /* Main.storyboard in Resources */,
@@ -134,8 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D94C8E2149727600926B45 /* PerfilViewController.swift in Sources */,
+				52D94C8A2149673F00926B45 /* RoundShadowedView.swift in Sources */,
 				528983B021480DA000FBE691 /* ViewController.swift in Sources */,
 				528983AE21480DA000FBE691 /* AppDelegate.swift in Sources */,
+				52D94C8C214967BC00926B45 /* DatosViewController.swift in Sources */,
+				52D94C882149670300926B45 /* RoundBorderedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,14 +307,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZT83K54T39;
 				INFOPLIST_FILE = PersonalCV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.guillen.PersonalCV;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.guillen.cv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,14 +327,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZT83K54T39;
 				INFOPLIST_FILE = PersonalCV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.guillen.PersonalCV;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.guillen.cv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
